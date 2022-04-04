@@ -47,10 +47,11 @@
             android:src="@drawable/ic_baseline_more_vert_24" />
     </LinearLayout>
 
+
     <ScrollView
         android:id="@+id/scrollListMessage"
         android:layout_width="match_parent"
-        android:layout_height="610dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         tools:ignore="SpeakableTextPresentCheck">
 
@@ -62,7 +63,6 @@
             android:gravity="right"
             android:orientation="vertical"></LinearLayout>
     </ScrollView>
-
 
     <LinearLayout
         android:layout_width="match_parent"
