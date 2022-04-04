@@ -90,14 +90,14 @@ public class HomeActivity extends Fragment {
         mediaObjectList.add(new MediaObject("No3Demo","admin", "app_Giatri", "videodata.getTimestamo()","android.resource://"  + getActivity().getPackageName() +"/" + R.raw.demovideono3, false, true));
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference reference = firebaseDatabase.getReference("Videos");
-        Query query = reference.orderByKey();
-        query.addValueEventListener(new ValueEventListener() {
+//        Query query = reference.orderByKey();
+        reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot ds : snapshot.getChildren()) {
                     DataVideo videodata = ds.getValue(DataVideo.class);
                     assert videodata != null;
-                    mediaObjectList.add(0,new MediaObject(videodata.getID(),videodata.getID_TK(), videodata.getTitle(), videodata.getTimestamo(), videodata.getVideourl(), false, true));
+                    mediaObjectList.add(new MediaObject(videodata.getID(),videodata.getID_TK(), videodata.getTitle(), videodata.getTimestamo(), videodata.getVideourl(), false, true));
 
                 }
             }

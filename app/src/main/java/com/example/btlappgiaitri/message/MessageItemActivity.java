@@ -157,7 +157,15 @@ public class MessageItemActivity extends AppCompatActivity {
 
                         linearLayout.addView(linearLayoutRoot);
                     }
+                    svMessage.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            svMessage.fullScroll(ScrollView.FOCUS_DOWN);
+                        }
+                    });
                 }
+
+
             }
 
             @Override
@@ -185,7 +193,6 @@ public class MessageItemActivity extends AppCompatActivity {
                         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("TinNhan");
                         reference.child(timestamp).setValue(hashMap);
                         etEmoji.getText().clear();
-
                     }
                     catch (Exception ex){
                         Log.e("Error","Có lỗi: "+ex);
