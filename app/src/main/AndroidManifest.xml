@@ -12,7 +12,6 @@
     <application
         android:name=".message.EmojiApplication"
         android:allowBackup="true"
-        android:name=".message.EmojiApplication"
         android:icon="@mipmap/ic_launcher_foreground"
         android:label="TikTok"
         android:roundIcon="@mipmap/ic_launcher_foreground"
