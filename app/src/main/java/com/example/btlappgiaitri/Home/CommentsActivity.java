@@ -48,7 +48,7 @@ public class CommentsActivity extends AppCompatActivity {
 
     ImageView avatar,btnsend;
     EditText txtComment;
-    RecyclerView Comments;
+    public static RecyclerView Comments;
     boolean check = false;
     private ProgressDialog progressDialogUpdata;
     AdapterComment adapterComment;
@@ -106,6 +106,13 @@ public class CommentsActivity extends AppCompatActivity {
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(Comments);
         adapterComment.setdata(getlistComment());
+
+        txtComment.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                Comments.scrollToPosition(CommentList.size()-1);
+            }
+        });
 
 
         txtComment.addTextChangedListener(new TextWatcher() {
@@ -207,15 +214,9 @@ public class CommentsActivity extends AppCompatActivity {
 
                     }
                 }
-
                 @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
+                public void onCancelled(@NonNull DatabaseError error) { }
             });
-
-
-
         }
 
 
@@ -245,15 +246,10 @@ public class CommentsActivity extends AppCompatActivity {
 
                             }
                         }
-
                         @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
+                        public void onCancelled(@NonNull DatabaseError error) { }
                     });
-
                 }
-
             }
 
             @Override
@@ -262,25 +258,20 @@ public class CommentsActivity extends AppCompatActivity {
                 assert comment != null;
                 CommentList.add(comment);
             }
-
             @Override
             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
                 Comment comment = snapshot.getValue(Comment.class);
                 assert comment != null;
                 CommentList.add(comment);
             }
-
             @Override
             public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 Comment comment = snapshot.getValue(Comment.class);
                 assert comment != null;
                 CommentList.add(comment);
             }
-
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
+            public void onCancelled(@NonNull DatabaseError error) { }
         });
         return  CommentList;
     }
@@ -293,8 +284,6 @@ public class CommentsActivity extends AppCompatActivity {
         hashMap.put("IdVideo",""+ AdapterMedia.idVideo);
         hashMap.put("ID_TK",""+ LoginActivity.ID_Tk);
 
-
-
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("binhLuan");
         reference.child(timestamp)
                 .setValue(hashMap)
@@ -303,8 +292,7 @@ public class CommentsActivity extends AppCompatActivity {
                     public void onSuccess(Void unused) {
                         progressDialogUpdata.dismiss();
                         txtComment.setText("");
-                        Toast.makeText(CommentsActivity.this, "đã xong  ", Toast.LENGTH_SHORT).show();
-
+                        Comments.scrollToPosition(CommentList.size()-1);
                     }
 
 
