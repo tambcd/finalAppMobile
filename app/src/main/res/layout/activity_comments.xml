@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view_cmt"
+
+    tools:context=".Home.CommentsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/header_title" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_MessageItem"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_img"
+            android:src="@drawable/sun" />
+
+        <EditText
+            android:id="@+id/txtcomment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@+id/post"
+            android:layout_toRightOf="@+id/avatar_MessageItem"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_baseline_tag_faces_24"
+            android:hint="Add a commect..."
+            android:minHeight="48dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_baseline_send_24"
+            android:visibility="gone"
+             />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

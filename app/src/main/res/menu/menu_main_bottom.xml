@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     >
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Trang chủ "
+        app:cnb_iconColor="@color/home"
+        />
+
+    <item
+        android:id="@+id/utilities"
+        android:icon="@drawable/discover"
+        android:title="Khám phá "
+        app:cnb_iconColor="@color/purple_200"
+         />
+
+    <item
+        android:id="@+id/btnAdd"
+        android:icon="@drawable/ic_add"
+        android:title="Thêm"
+        app:cnb_iconColor="@color/search"
+        />
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="Hộp thư "
+        app:cnb_iconColor="@color/settings"
+        />
+    <item
+        android:id="@+id/Person"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Hồ sơ "
+        app:cnb_iconColor="@color/teal_200"
+
+         />
+
+
+</menu>

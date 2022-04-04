@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "737055423307",
+    "firebase_url": "https://no3demo-default-rtdb.firebaseio.com",
+    "project_id": "no3demo",
+    "storage_bucket": "no3demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737055423307:android:4412d35f767686d4ca86ce",
+        "android_client_info": {
+          "package_name": "com.example.btlappgiaitri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737055423307-2ninu06rj6rlklqpfikk47sh2flttvn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.btlappgiaitri",
+            "certificate_hash": "619f9dcdd77258e89a630b50371a6dfd8a487ce5"
+          }
+        },
+        {
+          "client_id": "737055423307-g6bjd36rtfkdv0bok8ik3fv930du1oqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSyx34riCs2rQ0CtA6PzxN5ejaXqZQFB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737055423307-g6bjd36rtfkdv0bok8ik3fv930du1oqj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "737055423307-9gbhmtcnvcsr1t2b8g88b2k2203m94es.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.applicationgiaitri"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

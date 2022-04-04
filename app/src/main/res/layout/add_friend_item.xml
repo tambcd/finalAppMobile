@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_MessageItem"
+        android:layout_width="98dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_img"
+        android:src="@drawable/sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtName_AF"
+        android:layout_width="290dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/avatar_MessageItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnXacNhan_AF"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_message_item"
+        android:text="Xác nhận"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/avatar_MessageItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtName_AF" />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_message_item_gray"
+        android:text="Xóa"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/avatar_MessageItem"
+        app:layout_constraintTop_toBottomOf="@+id/txtName_AF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

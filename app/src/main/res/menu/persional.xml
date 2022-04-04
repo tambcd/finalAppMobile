@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    >
+
+    <item
+        android:id="@+id/phone"
+        android:icon="@drawable/ic_phone"
+        android:title="0123435436"
+        app:cnb_iconColor="@color/home"        />
+
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/ic_baseline_email_24"
+        android:title="TranTambcd111@gmail.com"
+        app:cnb_iconColor="@color/settings"        />
+    <item
+        android:id="@+id/btnAdd"
+        android:icon="@drawable/ic_like"
+        android:title="Yêu thích"
+        app:cnb_iconColor="@color/search"        />
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/ic_help"
+        android:title="Trợ giúp"
+        app:cnb_iconColor="@color/teal_200"        />
+    <item
+        android:id="@+id/Setting"
+        android:icon="@drawable/ic_settings"
+        android:title="Cài đặt "
+        app:cnb_iconColor="@color/teal_200"        />
+
+
+    <item
+        app:itemTextColor="#F93157"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Đăng xuất"
+        android:iconTint="#F93157"
+        app:cnb_iconColor="#F93157"  />
+
+
+</menu>

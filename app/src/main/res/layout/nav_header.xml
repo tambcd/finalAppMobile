@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="bottom"
+    android:id="@+id/headerV"
+    android:background="@color/color_login">
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/avatarNarba"
+       android:layout_width="80dp"
+       android:layout_height="80dp"       />
+    <TextView
+        android:id="@+id/txtname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tran Tam"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/QueQuan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trantam@gmail.com"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:textSize="12dp"/>
+</LinearLayout>
+
