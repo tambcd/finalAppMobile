@@ -93,7 +93,6 @@ public class AdapterMedia extends RecyclerView.Adapter<AdapterMedia.MediaViewMai
 
                 }
                 else {
-                    Log.e("TAG",IDLike[0]);
                     DatabaseReference reference = FirebaseDatabase.getInstance().getReference("tuongTac");
                     reference.child(IDLike[0]).removeValue();
 
