@@ -41,6 +41,10 @@
         <entry key="..\:/BTLAppGiaiTri/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/HOCTAP/Android/finalAppMobile/app/src/main/res/layout/activity_comments.xml" value="0.2" />
         <entry key="..\:/HOCTAP/Android/finalAppMobile/app/src/main/res/layout/activity_message_item.xml" value="0.23867753623188406" />
+        <entry key="..\:/HOCTAP/Android/finalAppMobile/app/src/main/res/layout/activity_personal.xml" value="0.23867753623188406" />
+        <entry key="..\:/HOCTAP/Android/finalAppMobile/app/src/main/res/layout/activity_personal_information.xml" value="0.23867753623188406" />
+        <entry key="..\:/HOCTAP/Android/finalAppMobile/app/src/main/res/layout/add_friend_item.xml" value="0.23867753623188406" />
+        <entry key="..\:/HOCTAP/Android/finalAppMobile/app/src/main/res/layout/itemfrieands.xml" value="0.23867753623188406" />
       </map>
     </option>
   </component>
