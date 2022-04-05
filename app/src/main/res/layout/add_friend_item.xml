@@ -12,7 +12,6 @@
         android:layout_height="101dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/bg_img"
-        android:src="@drawable/sun"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

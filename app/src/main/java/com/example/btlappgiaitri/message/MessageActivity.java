@@ -27,6 +27,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import java.util.ArrayList;
 
@@ -122,7 +123,6 @@ public class MessageActivity extends Fragment {
 
     private ArrayList<MessageData> getdata() {
         lstNotify =new ArrayList<>();
-        lstNotify.add(new MessageData("1","THT app","Đã thích video của bạn" ,"30/03/2022","https://i.pinimg.com/originals/2f/01/57/2f0157b3d3b536f74915eee6e512e056.jpg"));
 
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference reference = firebaseDatabase.getReference();
@@ -173,11 +173,11 @@ public class MessageActivity extends Fragment {
                             assert user != null;
                             if(user.getIdtk().equals(notifycation.getIDTKG()) && !notifycation.getIDTKG().equals(LoginActivity.ID_Tk)){
                                 if(notifycation.getType().equals("1")){
-                                    lstNotify.add(new MessageData(notifycation.getID(),user.getName(),"Đã bình luận :  " + notifycation.getTextContent(),notifycation.getThoiGian(),user.getAvatar()));
+                                    lstNotify.add(0,new MessageData(notifycation.getID(),user.getName(),"Đã bình luận :  " + notifycation.getTextContent(),notifycation.getThoiGian(),user.getAvatar()));
                                     lstNotifyAdapter.notifyDataSetChanged();
                                 }
                                 else if(notifycation.getType().equals("2")){
-                                    lstNotify.add(new MessageData(notifycation.getID(),user.getName(),"Đã thích video của bạn" ,notifycation.getThoiGian(),user.getAvatar()));
+                                    lstNotify.add(0,new MessageData(notifycation.getID(),user.getName(),"Đã thích video của bạn" ,notifycation.getThoiGian(),user.getAvatar()));
                                     lstNotifyAdapter.notifyDataSetChanged();
                                 }
 
